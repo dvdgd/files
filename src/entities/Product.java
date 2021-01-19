@@ -2,9 +2,9 @@ package entities;
 
 public class Product {
 	
-	String name;
-	Double price;
-	Integer quantity;
+	private String name;
+	private Double price;
+	private Integer quantity;
 	
 	public Product(String name, Double price, Integer quantity) {
 		this.name = name;
@@ -26,10 +26,5 @@ public class Product {
 	
 	public Double totalValue() {
 		return price * quantity;
-	}
-	
-	@Override
-	public String toString() {
-		return name + "; " + totalValue();
 	}
 }
